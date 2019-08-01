@@ -1,0 +1,27 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "quote-props": "always",
+    "useJSXTextNode": true,
+    
+    
+  },
+  "rules": {
+    "semi": "error",
+    "quote-props": ["error", "always"],
+    "spaced-comment": "error",
+    "sort-vars": "error",
+    "quotes": "error",
+    "accessor-pairs": "error",
+    "key-spacing": ["error", { "align": "colon" }]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser":  "@typescript-eslint/parser"
+}
