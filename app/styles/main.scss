@@ -24,6 +24,17 @@ body {
   }
 }
 
+#scores-display {
+  position: absolute;
+  right: 0;
+  width: 20%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 3rem;
+}
+
 #current-player {
   font-size: 4em;
 }
@@ -36,7 +47,7 @@ body {
   max-height: 500px;
   width: 80%;
   max-width: 500px;
-  margin: auto
+  margin: auto;
 }
 
 .grid {
@@ -137,27 +148,23 @@ body {
     font-size: 2.625rem;
     margin: auto;
     display: grid;
-    grid-template-areas:
-      'n1 n2'
-      's1 s2';
+    grid-template-areas: 'n1 n2' 's1 s2';
     justify-items: center;
 
-
     .n1 {
-      grid-area: n1
+      grid-area: n1;
     }
 
     .n2 {
-      grid-area: n2
+      grid-area: n2;
     }
 
     .s1 {
-      grid-area: s1
+      grid-area: s1;
     }
 
     .s2 {
-      grid-area: s2
+      grid-area: s2;
     }
-
   }
 }
