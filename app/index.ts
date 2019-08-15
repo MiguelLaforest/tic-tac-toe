@@ -1,15 +1,9 @@
-import Board from "./components/Board";
-import Game from "./components/Board";
+import Game from "./components/Game";
 
-const boardContainer = <HTMLDivElement>document.getElementById("board");
-const game = new Game(boardContainer);
-const reset = document.getElementById("reset");
-const restart = document.getElementById("restart");
+const game = new Game(document.querySelector("#board"));
 
-reset.addEventListener("click", () => {
-  game.board.reset();
-});
+document.getElementById("reset").addEventListener("click", game.board.reset);
 
-restart.addEventListener("click", () => {
+document.getElementById("restart").addEventListener("click", () => {
   game.playAgain();
 });
